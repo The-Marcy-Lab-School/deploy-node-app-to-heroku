@@ -18,7 +18,7 @@ These instructionrs were adapted from the following sources and tweaked to fit t
 5. Run `heroku open` to open your application in the browser. 
 
 ## Step 3: Setting up you Database
-0. At this point, you can make requests to your server, but you may find that you access any data. This is because you must set up a Heroku Database. 
+0. At this point, you can make requests to your server, but you may find that you can't access any data. This is because you must set up a Heroku Database. 
 1. Run `heroku addons:create heroku-postgresql:hobby-dev` to create a free Postgres database for your Heroku app. 
 2. Run `heroku config:set PGSSLMODE=no-verify` to turn off SSL.
 3. To run any command on the Heroku server, prefix the command with `heroku run`. Therefore, the command to run you knex migrations in Heroku is `heroku run knex migrate:latest`. 
