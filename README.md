@@ -22,7 +22,7 @@ These instructionrs were adapted from the following sources and tweaked to fit t
 1. Run `heroku addons:create heroku-postgresql:hobby-dev` to create a free Postgres database for your Heroku app. 
 2. Run `heroku config:set PGSSLMODE=no-verify` to turn off SSL.
 3. To run any command on the Heroku server, prefix the command with `heroku run`. Therefore, the command to run you knex migrations in Heroku is `heroku run knex migrate:latest`. 
-4. Run `heroku run knex seed:run` to fun your seed files and seed the Heroku database. 
+4. Run `heroku run knex seed:run` to run your seed files and seed the Heroku database. 
 
 ## Step 4: Verify that your Express API is working
 1. If your browser does not already have it open, run `heroku open` to open a new broswer tab to make GET requests to your server. Make requests via the browser and via Postman to ensure all the routes work as expected. 
